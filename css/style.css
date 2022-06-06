@@ -151,7 +151,16 @@ h3{
     animation-name: fadeIn1;
     animation-duration: 1s;
   }
-
+  @-webkit-keyframes fadeIn2 {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
   /* hiệu ứng đóng menu reponsive */
   @-webkit-keyframes fadeInRightBig1 {
     from {
@@ -196,7 +205,30 @@ h3{
     -webkit-animation-name: fadeInRightBig1;
     animation-name: fadeInRightBig1;
   }
-
+  @-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
 
 .animation-delay1{
     animation-delay: 0s;
@@ -276,6 +308,9 @@ h3{
     font-size: 1.7rem;
 }
 .font-size23{
+    font-size: 2.3rem;
+}
+.font1-size23{
     font-size: 2.3rem;
 }
 .font-size25{
@@ -532,7 +567,12 @@ li{
 .d-flex3{
     display: flex;
 }
-
+.d-flex4{
+    display: none;
+}
+.d-flex5{
+    display: flex;
+}
 .reponsive{
     display: none;
 }
@@ -664,9 +704,36 @@ li{
     .width1-91{
         width: 100%;
     }
+    .width-400px{
+        width:auto;
+    }
+    .width1-70 {
+        width: 85%;
+    }
 }
 
-
-@media only screen and (max-width: 920px){
-    
+@media only screen and (max-width: 445px){
+    h3{
+        font-size: 2rem;
+    }
+    .font1-size23{
+        font-size: 1.7rem;
+    }
+    .font-size{
+        font-size: 1.4rem;
+    }
+    .width-150px{
+        width: 130px;
+    }
+}
+@media only screen and (max-width: 400px){
+    h3{
+        font-size: 1.7rem;
+    }
+    .font1-size23{
+        font-size: 1.3rem;
+    }
+    .font-size{
+        font-size: 1rem;
+    }
 }
